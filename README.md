@@ -1,5 +1,5 @@
 # HMHttpLib
-# 一个EventRunner + EventHandler + gson + 自定义注解 实现的网络请求库
+# 一个EventRunner + EventHandler + gson + 自定义注解 实现的鸿蒙原生网络请求库
 
 # Screenshot：
 ![image](https://raw.githubusercontent.com/Victor2018/HMHttpLib/main/SrceenShot/st_1.png)

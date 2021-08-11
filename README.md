@@ -2,11 +2,11 @@
 # 一个EventRunner + EventHandler + gson + 自定义注解 实现的网络请求库
 
 # Screenshot：
-![image](https://github.com/Victor2018/HMHttpLib/raw/master/SrceenShot/st_1.png)
-![image](https://github.com/Victor2018/HMHttpLib/raw/master/SrceenShot/st_2.png)
-![image](https://github.com/Victor2018/HMHttpLib/raw/master/SrceenShot/st_3.png)
-![image](https://github.com/Victor2018/HMHttpLib/raw/master/SrceenShot/st_4.png)
-![image](https://github.com/Victor2018/HMHttpLib/raw/master/SrceenShot/st_5.png)
+![image](https://raw.githubusercontent.com/Victor2018/HMHttpLib/main/SrceenShot/st_1.png)
+![image](https://raw.githubusercontent.com/Victor2018/HMHttpLib/main/SrceenShot/st_2.png)
+![image](https://raw.githubusercontent.com/Victor2018/HMHttpLib/main/SrceenShot/st_3.png)
+![image](https://raw.githubusercontent.com/Victor2018/HMHttpLib/main/SrceenShot/st_4.png)
+![image](https://raw.githubusercontent.com/Victor2018/HMHttpLib/main/SrceenShot/st_5.png)
 
 
 Usage

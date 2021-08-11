@@ -1,0 +1,57 @@
+package com.victor.hm.http.impl;
+
+/*
+ * -----------------------------------------------------------------
+ * Copyright (C) 2020-2080, by Victor, All rights reserved.
+ * -----------------------------------------------------------------
+ * File: CategoryPresenterImpl
+ * Author: Victor
+ * Date: 2021/8/9 14:25
+ * Description:
+ * -----------------------------------------------------------------
+ */
+
+import com.victor.hm.http.data.CategoryInfo;
+import com.victor.hm.http.view.CategoryView;
+import com.victor.hm.library.annotation.HttpParms;
+import com.victor.hm.library.data.FormInfo;
+import com.victor.hm.library.data.Request;
+import com.victor.hm.library.inject.HttpInject;
+import com.victor.hm.library.presenter.impl.BasePresenterImpl;
+
+public class CategoryPresenterImpl <H,T> extends BasePresenterImpl<H,T> {
+    /*Presenter作为中间层，持有View和Model的引用*/
+    private CategoryView IView;
+
+    public CategoryPresenterImpl(CategoryView IView) {
+        this.IView = IView;
+    }
+
+    @Override
+    public void onSuccess(T data) {
+        if (IView == null) return;
+        if (data == null) {
+            IView.OnCategoryInfo(null,"no data response");
+        } else {
+            IView.OnCategoryInfo(data,"");
+        }
+    }
+
+    @Override
+    public void onError(String error) {
+        if (IView == null) return;
+        IView.OnCategoryInfo(null,error);
+    }
+
+    @Override
+    public void detachView() {
+        IView = null;
+    }
+
+    @HttpParms(method = Request.GET, responseCls = CategoryInfo.class)
+    @Override
+    public void sendRequest(String url, H header,T parm, FormInfo formInfo) {
+        HttpInject.inject(this);
+        super.sendRequest(url,header,parm,formInfo);
+    }
+}

@@ -1,5 +1,11 @@
 apply plugin: 'com.huawei.ohos.library'
 //For instructions on signature configuration, see https://developer.harmonyos.com/cn/docs/documentation/doc-guides/ide_debug_device-0000001053822404#section1112183053510
+
+// JitPack Maven
+apply plugin: 'com.github.dcendents.android-maven'
+// Group
+group='com.github.Victor2018'
+
 ohos {
     compileSdkVersion 5
     defaultConfig {
